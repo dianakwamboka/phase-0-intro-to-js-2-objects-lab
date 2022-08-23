@@ -1,13 +1,20 @@
 // Write your solution in this file!
-const employee = {name: "Sam"}
-    console.log(employee)
-    employee.name = "Sam"
-
- function updateEmployeeWithKeyAndValue(key, value){
-    const employee = {name: "Sam"};
-    employee.streetAddress ="11 Broadway";
-    console.log ("employee");
-    console.log ("address");
+const employee = {
+   name: "Sam",
+   address: ""
+    //employee.name = "Sam"
+   
+    
+}
+ function updateEmployeeWithKeyAndValue(emloyee, key, value){
+   return {
+      ...employee,
+      [key]:value
+   }
+   //  const employee = {name: "Sam"};
+   //  employee.streetAddress ="11 Broadway";
+   //  console.log ("employee");
+   //  console.log ("address");
  } 
 
  function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
